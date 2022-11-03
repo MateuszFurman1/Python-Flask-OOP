@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <h1> Guess: {{quess}} </h1>
+        <p>Please write Too many or Not enough or Guess it</p>
+
+        <form action="/post" method="POST">
+
+            <input type="text" name="text" id="text" />
+            <input type="submit"/>
+            <input type="hidden" name="qu" value="{{ quess }}" />
+            <input type="hidden" name="min" value="{{ min }}" />
+            <input type="hidden" name="max" value="{{ max }}" />
+
+        </form>
+
+</body>
+</html>
